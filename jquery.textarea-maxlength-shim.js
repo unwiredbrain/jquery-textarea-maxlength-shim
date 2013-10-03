@@ -16,17 +16,23 @@
  * limitations under the License.
  */
 if (!("maxLength" in document.createElement("textarea"))) {
+    var getLimit = function($e) {
+        return Math.abs(parseInt($e.attr("maxlength"), 10)) || -1;
+    };
+
     $("textarea[maxlength]").each(function () {
         var $this = $(this).on("keydown keyup focus blur", function (event) {
                 var keyCode = event.which,
                     that = this;
+
+                limit = getLimit($this);
+
                 if (keyCode === 13 || keyCode >= 33) {
                     if (that.value.length >= limit) {
                         that.value = that.value.substr(0, limit - 1);
                         event.preventDefault();
                     }
                 }
-            }),
-            limit = Math.abs(parseInt($this.attr("maxlength"), 10)) || -1;
+            });
     });
 }
