@@ -1,0 +1,20 @@
+# Mac OS X
+# --------
+
+.DS_Store
+
+
+
+# Sublime Text
+# ------------
+
+*.sublime-project
+*.sublime-workspace
+
+
+
+# Windows
+# -------
+
+Desktop.ini
+Thumbs.db
