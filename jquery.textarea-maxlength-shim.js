@@ -17,7 +17,7 @@
  */
 if (!("maxLength" in document.createElement("textarea"))) {
     $("textarea[maxlength]").each(function () {
-        var $this = $(this).on("keydown keyup focus blur", function (event) {
+        var $this = $(this).on("keydown keyup focus blur paste", function (event) {
                 var keyCode = event.which,
                     that = this;
                 if (keyCode === 13 || keyCode >= 33) {
