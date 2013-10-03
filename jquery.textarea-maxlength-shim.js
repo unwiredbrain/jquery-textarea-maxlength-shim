@@ -1,5 +1,5 @@
 /*!
- * jquery.textarea-maxlength-shim.js v1.0.1 (2013-10-03)
+ * jquery.textarea-maxlength-shim.js v1.0.2 (2013-10-03)
  *
  * Copyright 2013 Massimo Lombardo (@unwiredbrain)
  *
@@ -17,7 +17,7 @@
  */
 if (!("maxLength" in document.createElement("textarea"))) {
     $("textarea[maxlength]").each(function () {
-        var $el = $(this).on("keydown keyup focus blur", function (event) {
+        var $el = $(this).on("keydown keyup focus blur paste cut", function (event) {
             var keyCode = event.which,
                 that = this,
                 limit = Math.abs(parseInt($el.attr("maxlength"), 10)) || -1;
