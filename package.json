@@ -1,0 +1,35 @@
+{
+  "name": "jquery.textarea-maxlength-shim",
+  "description": "jQuery textarea maxlength shim",
+  "author": "Massimo Lombardo <massimo@unwiredbrain.com>",
+  "version": "1.0.2",
+  "devDependencies": {
+    "grunt": "0.4.1",
+    "grunt-contrib-watch": "0.5.3",
+    "grunt-contrib-uglify": "0.2.4",
+    "grunt-contrib-concat": "0.3.0",
+    "grunt-umd": "alexlawrence/grunt-umd"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:unwiredbrain/jquery-textarea-maxlength-shim.git"
+  },
+  "bugs": {
+    "url": "https://github.com/unwiredbrain/jquery-textarea-maxlength-shim/issues"
+  },
+  "keywords": [
+    "jquery",
+    "textarea",
+    "shim",
+    "amd",
+    "umd"
+  ],
+  "main": "dist/jquery.textarea-maxlength-shim.js",
+  "license": "Apache",
+  "licenses": [
+    {
+      "type": "Apache",
+      "url": "https://github.com/unwiredbrain/jquery-textarea-maxlength-shim/blob/master/LICENSE.txt"
+    }
+  ]
+}
