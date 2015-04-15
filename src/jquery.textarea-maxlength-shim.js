@@ -5,8 +5,8 @@ if (!("maxLength" in document.createElement("textarea"))) {
                 that = this,
                 limit = Math.abs(parseInt($el.attr("maxlength"), 10)) || -1;
             if (keyCode === 13 || keyCode >= 33) {
-                if (that.value.length >= limit) {
-                    that.value = that.value.substr(0, limit - 1);
+                if (that.value.length > limit) {
+                    that.value = that.value.substr(0, limit);
                     event.preventDefault();
                 }
             }
