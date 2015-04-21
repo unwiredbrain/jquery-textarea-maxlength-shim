@@ -2,7 +2,7 @@
   "name": "jquery.textarea-maxlength-shim",
   "description": "jQuery textarea maxlength shim",
   "author": "Massimo Lombardo <massimo@unwiredbrain.com>",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "devDependencies": {
     "grunt": "0.4.1",
     "grunt-contrib-watch": "0.5.3",
